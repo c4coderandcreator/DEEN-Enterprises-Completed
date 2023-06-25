@@ -1,0 +1,44 @@
+body {
+	background: linear-gradient(-45deg, #ffffff, #fffbbd, #aba72f, #ffe223);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.card{
+    margin: 2% 2% 2% 2%;
+    padding-bottom: 2%;
+    background-image: url("images/Background2.jpg");
+}
+
+.Top{
+    text-align: center;
+    padding: 2%;
+}
+.btn{
+    margin: 2% 2% 2% 0%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 25px;
+    width: 25px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+a {
+    text-decoration: none;
+  }
