@@ -85,7 +85,8 @@
 }
 .hero{
     width: 100%;
-    height: 100vh;
+	/* height:100vh; */
+    height: 60vh;
     background-image: linear-gradient(rgba(253, 255, 147, 0.5),rgba(232, 213, 0, 0.8));
     background-position: center;
     background-size: cover;
@@ -95,7 +96,8 @@
 .title2{
     width: 60%;
     display: inline-block;
-    margin: 150px auto 0;
+    /* margin: 150px auto 0; */
+	margin-top:50px;
     color: #000000;
     text-align: center;
 }
@@ -103,7 +105,8 @@
     margin-bottom: 30px;
 }
 .title2 .h11{
-    font-size: 30px;
+    /* font-size: 30px; */
+	font-size: 2rem;
     line-height: 50px;
 }
 .row1{
@@ -391,4 +394,105 @@ body {
   
   a {
 	text-decoration: none;
+  }
+
+  @media (max-width:480px){
+	.hero{
+		height:65vh;
+	}
+	.title2{
+		margin-top: 30px;
+	}
+	.title2 .h11 {
+		font-size: 1.7rem;
+	}
+	.row1{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.col1{
+		flex-basis: 45%;
+		margin-bottom: 10px;
+	}
+	.counter-box .fa {
+    	font-size: 30px;
+	}
+	.counter, .sp{
+		margin: 3px 0;
+		font-size: 29px;
+	}
+	.count-name{
+		font-size: 16px;
+	}
+	.title-card{
+		margin: 1.3rem 3rem;
+	}
+	.title-card-body {
+		padding: 2rem!important;
+	}
+	.title-logo{
+		margin-top:-2rem!important;
+		margin-bottom:-0.5rem!important;
+	}
+	.title-img{
+		width:110px;
+		height:110px;
+	}
+	.title-text{
+		margin-bottom: 0rem;
+		font-size: 0.85rem;
+	}
+	.title-text2{
+		font-size: 0.79rem;
+	}
+	.title-btn {
+		margin: 5px 0;
+		--bs-btn-padding-y: 0.2rem;
+		--bs-btn-padding-x: 0.5rem;
+		--bs-btn-font-size: 1rem;
+	}
+	.title-btn-footer{
+		font-size: 0.9rem;
+	}
+	.custom-loader{
+		height:20px;
+		width:20px;
+		margin:0 3px;
+	}
+	.custom-loader:before{
+		background-size: 15px 15px;
+	}
+	.Logo{
+		font-size: 24px;
+	}
+
+  }
+  @media (min-width:481px) and (max-width:720px){
+	.hero{
+		height:65vh;
+	}
+	.title2{
+		margin-top: 25px;
+	}
+	.title2 .h11 {
+		font-size: 1.8rem;
+	}
+	.row1{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.col1{
+		flex-basis: 45%;
+		margin-bottom: 10px;
+	}
+	.counter-box .fa {
+    	font-size: 35px;
+	}
+	.counter, .sp{
+		margin: 3px 0;
+		font-size: 33px;
+	}
+	.count-name{
+		font-size: 18px;
+	}
   }
