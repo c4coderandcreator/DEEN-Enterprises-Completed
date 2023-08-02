@@ -11,7 +11,9 @@
     font-weight: 700;
     color: hsl(0, 0%, 100%);
 }
-
+h1{
+	font-size: 2rem;
+}
 .custom-loader {
   width: 40px;
   height: 40px;
@@ -46,8 +48,8 @@
   color:#000000;
 }
 .nav-link{
-  font-family: 'Montserrat-bold';
-    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
   color: rgb(0, 0, 0);
 
 }
@@ -67,8 +69,8 @@
 
 #carouselExampleCaptions{
     padding: 7% 15%;
-    font-family: 'Montserrat-bold';
-    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 300; */
     text-align: center;
     background-color: rgb(255, 239, 120);
     color: #000000;
@@ -150,8 +152,6 @@
 .pricing-column{
   padding: 3% 2%;
 }
-
-   
    
    .footer-link{
      font-family: 'Merriweather', serif;
@@ -399,6 +399,9 @@ body {
   @media (max-width:480px){
 	.hero{
 		height:65vh;
+	}
+	h1{
+		font-size: 1.7rem;
 	}
 	.title2{
 		margin-top: 30px;

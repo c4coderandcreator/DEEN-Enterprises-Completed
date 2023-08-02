@@ -3,8 +3,8 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 	height: 100vh;
+    overflow-x: hidden;
 }
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -16,21 +16,20 @@ body {
 		background-position: 0% 50%;
 	}
 }
-.card{
-    margin: 2% 2% 2% 2%;
-    padding-bottom: 2%;
-    background-image: url("images/Background2.jpg");
-}
-
 .Top{
     text-align: center;
-    padding: 2%;
+    padding: 0;
 }
-.btn{
-    margin: 2% 2% 2% 0%;
+h1{
+    margin-bottom: 0.9rem;
 }
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.w-100 {
+    width: 70%!important;
+    margin: auto;
+}
+#carouselExampleIndicators{
+    margin: 10% 0;
+}.carousel-control-prev-icon, .carousel-control-next-icon {
     height: 25px;
     width: 25px;
     outline: black;
@@ -39,6 +38,125 @@ body {
     border-radius: 50%;
     border: 1px solid black;
 }
-a {
+.btn{
+    margin: 2% 2% 1% 2%;
+}
+.btn-lg {
+    --bs-btn-padding-y: 0.7rem;
+    --bs-btn-padding-x: 0.9rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 1rem;
+}
+.btn-info {
+    --bs-btn-color: #6b6a6a;
+    --bs-btn-bg: #ffffff;
+    --bs-btn-border-color: #919495;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #919495;
+    --bs-btn-hover-border-color: #919495;
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #393b3b;
+    --bs-btn-active-border-color: #919495;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #919495;
+    --bs-btn-disabled-border-color: #96999a;
+}
+.card{
+    margin: 2% 2% 2% 2%;
+    padding-bottom: 2%;
+    background-image: url("images/Background2.jpg");
+}
+.card-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+.div-bottom-btn{
+    display: flex;
+}
+.col-md-4{
+    margin: auto;
+}
+a{
     text-decoration: none;
+    color: black;
+}
+.page-btn{
+	flex-wrap: wrap;
+    margin: -6px -2px;
+}
+@media (max-width:480px) {
+    body{
+        overflow: scroll;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    .w-100{
+        width: 60%!important;
+    }
+    #carouselExampleIndicators{
+        margin: 10% 10%;
+    }
+    .btn{
+      --bs-btn-padding-x: 0.35rem;
+      --bs-btn-padding-y: 0.35rem;
+      --bs-btn-font-size: 0.75rem;
+    }
+    .btn-lg {
+      --bs-btn-padding-y: 0.5rem;
+      --bs-btn-padding-x: 0.7rem;
+      --bs-btn-font-size: 0.85rem;
+      --bs-btn-border-radius: 0.5rem;
+    }
+    .card-title{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:481px) and (max-width:720px){
+    body{
+        overflow: scroll;
+    }
+    
+    .w-100{
+          width: 60%!important;
+    }
+    #carouselExampleIndicators{
+          margin: 10% 10%;
+    }
+    h1{
+          font-size: 1.8rem;
+    }
+    .btn{
+        --bs-btn-padding-x: 0.35rem;
+        --bs-btn-padding-y: 0.35rem;
+        --bs-btn-font-size: 0.75rem;
+    }
+    .btn-lg {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 0.7rem;
+        --bs-btn-font-size: 0.85rem;
+        --bs-btn-border-radius: 0.5rem;
+    }
+    .card-title{
+          text-align: center;
+          font-size: 1.3rem;
+    }
+    .card-text{
+          font-size: 0.8rem;
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
   }
